@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+td{
+  padding: 0px 7px;
+  text-align: center;
+}
+table{
+  width: 50%;
+  border-collapse: collapse;
+border: 2px solid black;
+}
+
+.table{
+  width: auto;
+  height: 40vh;
+  border: 1px solid red;
+  display: grid;
+align-items: center;
+justify-content: center;
+}
+thead{
+  background-color: #E5B8B7;
+}
+tbody{
+  background-color: #DBE5F1;
+}
+
+.last{
+  background-color: yellow;
+}
+
+.macam-macam-display{
+  display: flex;
+  width: auto;
+  height: 50vh;
+}
+
+.macam-macam-display > div{
+  width: 25%;
+  height: 100%;
+  border: blue 1px solid;
+  padding: 15px;
+}
+
+.none-text,.inline-text,.inline-block-text,.block-text{
+  background-color: blue;
+  color: white;
+}
+
+.none-text{
+  display: none;
+}
+.inline-text{
+  display: inline;
+  width: 100px;
+  height: 100px;
+}
+.block-text{
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+.inline-block-text{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}

@@ -1,0 +1,153 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+div{
+  background-color: yellow;
+}
+
+[paragraf]{
+  background-color: black;
+  color: white;
+}
+[paragraf="paragraf1"]{
+  background-color: black;
+  color: yellow;
+}
+[paragraf~="parsien"]{
+  background-color: black;
+  color: yellow;
+}
+[paragraf|="paragraf"]{
+font-size: 60px;
+}
+[paragraf^="par"]{
+  background-color: black;
+  color: yellow;
+  font-style: italic;
+}
+[paragraf$="paragraf"]{
+font-size: 50px;
+}
+
+.box{
+  width: 300px;
+  height: 300px;
+  background-color: black;
+}
+
+/* #pertama{
+  background-color: yellow;
+  color: black;
+}
+.paragraf{
+  background-color: brown;
+} */
+
+
+/* Descendant Selector */
+/* .div1 .paragraf{
+background-color: aqua;
+} */
+
+/* Child Selector */
+
+/* .div1 > .paragraf{
+  background-color: aqua;
+  } */
+
+/* Adjacent sibling selector */
+/* div + p{
+  color: aquamarine;
+} */
+
+/* General sibling selector */
+/* div ~ p{
+color: green;
+} */
+
+
+/* Pseudo class selectors */
+/* Hover,link,active,visited,checked,first-child,last-child */
+/* a:link{
+  color: aqua;
+}
+a:hover{
+  color: blueviolet;
+  background-color: black;
+}
+a:active{
+  color: yellow;
+}
+a:visited{
+  color: rgb(255, 30, 255);
+}
+
+:checked{
+  width: 100px;
+  height: 100px;
+} */
+
+/* .div1 p:first-child{
+  color: red;
+  background-color: yellow;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#div2 p:last-child{ 
+  color: blue;
+}
+
+p::after{
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  display: inline-block;
+}
+p::before{
+  content: "Ini tulisan sebelum paragraf ";
+}
+
+p::first-letter{
+  text-transform: lowercase;
+  font-size: 200%;
+  color: aqua;
+}
+p::first-line{
+  color: black;
+}
+
+::selection{
+  background-color: black;
+  color: yellow;
+} */
+
+/* ::marker{
+  font-size: 30px;
+  color: blue;
+} */
+
+@media (min-width:400px){
+  .box{
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+  }
+  
+}
+#span2{
+  color: black;
+}
+
+span{
+  color: blue !important;
+}
+span{
+  color: green;
+}
+span{
+  color: brown;
+}

@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Default */
+.wrapper{
+  width: 100vw;
+  height: 200vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.section{
+  width: 30vw;
+  height: 40vh;
+  background-color:purple;
+}
+/* Hex Code */
+.section{
+  background-color: #31304d9f;
+}
+/* RGB */
+.section{
+background-color: rgb(227, 55, 55);
+}
+/* RGBA */
+.section{
+background-color: rgba(0, 0, 0,1);
+}
+/* HSL */
+.section{
+background-color: hsla(58, 98%, 71%, 1);
+}
+/* HSLA */
+.section{
+background-color: hsla(58, 98%, 71%, 0.5);
+}
+
+.section{
+  background: rgb(27,66,66);
+background: linear-gradient(180deg, rgba(27,66,66,1) 0%, rgba(9,38,53,1) 97%);
+}
+.section{
+ background: rgb(27,66,66);
+background: radial-gradient(circle, rgba(27,66,66,1) 67%, rgba(9,38,53,1) 100%);
+}
+.section{
+  background-image:url(building2.jpg);
+  background-attachment: scroll;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+#photo1{
+  background-position: top;
+}
+#photo2{
+  background-position: center;
+}
+#photo3{
+  background-position: bottom;
+}
+#photo4{
+background-position: left;
+}
+#photo5{
+background-position: right;
+}

@@ -1,0 +1,94 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow: hidden;
+}
+
+.container{
+  width: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border: red 1px solid;
+  display: grid;
+  place-items: center;
+  color: white;
+  animation: translate 3s infinite;
+  box-shadow: 10px 10px 1000px 2px #f0f0f0;
+  transition: width 1s ease-in-out;
+
+}
+
+
+
+/* 
+img{
+  filter:sepia(100%);
+} */
+/* .box:nth-child(1){
+  transform: translateY(50px);
+} */
+
+.box:hover{
+  width: 500px;
+}
+
+
+/* @keyframes rotate{
+  from{
+    transform: rotate(0);
+  }to{
+    transform: rotate(45deg);
+  }
+} */
+
+@keyframes translate{
+0%,100%{
+  transform: translateX(10px);
+}25%{
+  transform: translateY(20px);
+}
+  50%{
+    transform: translate(30px);
+}75%{
+  transform: translate(40px);
+}
+}
+
+/* 
+Transform
+Scale memperbesar atau memperkecil objek
+Translate menggerakan objek secara horizontal/vertikal
+Rotate memutar objek berdasarkan derajat
+Skew ketidaksimetrisan objek berdaasarkan derajat
+*/
+
+/* 
+Untuk animation dan juga transition itu bisa diakses secara cepat
+melalui properties animation dan transition dibanding harus menggunakan
+properties mereka satu"
+Misal:
+  transition-property: width;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  disingkat menjadi:
+  transition: width 1s ease-in-out;
+*/
+
+/* 
+Filter biasa digunakan untuk iamge, 
+karena memengaruhi keseluruhan elemen
+ */
+
+ /* 
+ Box shadow untuk bikin bayangan dibelakang objek
+*/
